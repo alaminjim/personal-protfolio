@@ -30,23 +30,19 @@ const Footer = () => {
           {[
             {
               icon: <FaFacebook />,
-              link: "https://www.facebook.com/tarun.kaushik.3511041/",
+              link: "https://www.facebook.com/md.alamin.jim",
             },
             {
               icon: <FaTwitter />,
-              link: "https://twitter.com/CodingMaster6?s=09",
+              link: "https://x.com/md_alamin_jim",
             },
             {
               icon: <FaLinkedin />,
-              link: "https://www.linkedin.com/in/tarun-kaushik-553b441a4",
+              link: "",
             },
             {
               icon: <FaInstagram />,
-              link: "https://www.instagram.com/coding_.master/",
-            },
-            {
-              icon: <FaYoutube />,
-              link: "https://www.youtube.com/codingmasteryt",
+              link: "https://www.instagram.com/md.alamin.jim/",
             },
           ].map((item, index) => (
             <a
