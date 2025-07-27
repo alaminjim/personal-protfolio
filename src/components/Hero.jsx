@@ -58,7 +58,7 @@ export default function Hero() {
 
   const [code] = useState(`
 const profile = {
-    name: 'Fahim Rahman',
+    name: 'Al-Amin Islam',
     title: 'Junior Web Developer | Problem Solver',
     skills: [
         'HTML5', 'CSS3', 'JavaScript', 'React',
@@ -126,7 +126,7 @@ console.log(profile.hireable()); // true
                     I'm
                     <span className="typing-effect gradient-text">
                       {" "}
-                      Fahim Rahman
+                      Al Amin Islam
                     </span>
                   </span>
                 </h1>
