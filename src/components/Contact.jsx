@@ -88,6 +88,7 @@ export default function Contact() {
 
   return (
     <main
+      id="contact"
       className="pt-20 lg:pt-[0rem] bg-gradient-to-b from-[#020617] via-[#0a0f1f] to-[#000D1A]/90
  text-white min-h-screen"
     >

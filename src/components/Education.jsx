@@ -8,17 +8,17 @@ const EducationSection = () => {
   const educationData = [
     {
       degree: "Secondary School Certificate (SSC)",
-      school: "Mosjid Mission Academy, Rajshahi",
+      school: "Santahar B.P High School, Santahar , Bogra",
       mascot: "📘",
       year: "2021-2022",
-      achievements: ["GPA : 4.67", "Subject : Science"],
+      achievements: ["GPA : 5.00", "Subject : Science"],
       skills: ["Mathematics", "Physics", "Chemistry", "Biology", "Higher-Math"],
       description:
         "Focused on core science subjects with emphasis on practical laboratory work.",
     },
     {
       degree: "Diploma in engineering Computer science and technology",
-      school: "Rajshahi Politechnic Institute",
+      school: "Rajshahi polytechnic Institute",
       mascot: "📗",
       year: "Expected passing Year 2026",
       achievements: ["CGPA : loading", "Subject : CST"],

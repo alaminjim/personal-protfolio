@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable react/prop-types */
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "./globe";
@@ -7,7 +5,6 @@ import { SiJavascript } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { SiExpress } from "react-icons/si"; // For Express.js (if available)
 import { IoIosConstruct } from "react-icons/io"; // For DIY (using wrench icon as example)
-
 import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma } from "react-icons/fa";
 import {

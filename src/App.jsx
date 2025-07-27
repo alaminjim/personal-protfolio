@@ -8,6 +8,8 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   const [isOnePage, setIsOnePage] = useState(false); // Toggle state
@@ -26,14 +28,18 @@ export default function App() {
         </>
       ) : (
         // Router Mode: Use routes for navigation
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </>
       )}
+      <Footer></Footer>
     </>
   );
 }
