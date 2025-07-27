@@ -91,143 +91,157 @@ export default function Contact() {
       className="pt-20 lg:pt-[0rem] bg-gradient-to-b from-[#020617] via-[#0a0f1f] to-[#000D1A]/90
  text-white min-h-screen"
     >
-      <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                  Get in Touch
-                </h2>
-                <p className="text-gray-300 text-lg">
-                  Have a question or want to work together? Drop us a message!
-                </p>
+      <section>
+        <div className="text-center pt-24">
+          <h3 className="text-xl font-semibold text-white text-center">
+            Connect With Me <span className="ml-1">🚀</span>
+          </h3>
+          <div className="w-56 h-1 bg-purple-500 mx-auto mt-4"></div>
+          <p className="text-gray-400 mt-4 text-lg font-semibold">
+            I’d love to hear from you—reach out for any opportunities or
+            questions!
+          </p>
+        </div>
+        <div className="hero min-h-screen flex items-center relative px-4 pb-8 sm:px-6 lg:px-8">
+          <div className="container mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Contact Info */}
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    Get in Touch
+                  </h2>
+                  <p className="text-gray-300 text-lg">
+                    Have a question or want to work together? Drop us a message!
+                  </p>
+                </div>
+
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="bg-purple-500/10 p-3 rounded-lg">
+                      <Mail className="w-6 h-6 text-purple-400" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Email</h3>
+                      <p className="text-gray-400">jimalamin7@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="bg-pink-500/10 p-3 rounded-lg">
+                      <MapPin className="w-6 h-6 text-pink-400" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Location</h3>
+                      <p className="text-gray-400">Rajshahi, Bangladesh</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-purple-500/10 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-purple-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">jimalamin7@gmail.com</p>
-                  </div>
-                </div>
+              {/* Contact Form */}
+              <div className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl shadow-xl">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 gap-6">
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
+                          errors.name ? "border-red-500" : "border-gray-700"
+                        } focus:border-blue-500 focus:outline-none transition-colors`}
+                        value={formData.name}
+                        onChange={(e) =>
+                          setFormData({ ...formData, name: e.target.value })
+                        }
+                      />
+                      {errors.name && (
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.name}
+                        </p>
+                      )}
+                    </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="bg-pink-500/10 p-3 rounded-lg">
-                    <MapPin className="w-6 h-6 text-pink-400" />
+                    <div>
+                      <input
+                        type="email"
+                        placeholder="Your Email"
+                        className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
+                          errors.email ? "border-red-500" : "border-gray-700"
+                        } focus:border-blue-500 focus:outline-none transition-colors`}
+                        value={formData.email}
+                        onChange={(e) =>
+                          setFormData({ ...formData, email: e.target.value })
+                        }
+                      />
+                      {errors.email && (
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.email}
+                        </p>
+                      )}
+                    </div>
+
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
+                          errors.subject ? "border-red-500" : "border-gray-700"
+                        } focus:border-blue-500 focus:outline-none transition-colors`}
+                        value={formData.subject}
+                        onChange={(e) =>
+                          setFormData({ ...formData, subject: e.target.value })
+                        }
+                      />
+                      {errors.subject && (
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.subject}
+                        </p>
+                      )}
+                    </div>
+
+                    <div>
+                      <textarea
+                        placeholder="Your Message"
+                        rows="4"
+                        className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
+                          errors.message ? "border-red-500" : "border-gray-700"
+                        } focus:border-blue-500 focus:outline-none transition-colors resize-none`}
+                        value={formData.message}
+                        onChange={(e) =>
+                          setFormData({ ...formData, message: e.target.value })
+                        }
+                      ></textarea>
+                      {errors.message && (
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.message}
+                        </p>
+                      )}
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Rajshahi, Bangladesh</p>
+
+                  <button
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:opacity-90 transition-opacity"
+                  >
+                    <span>Send Message</span>
+                    <Send className="w-4 h-4" />
+                  </button>
+                </form>
+
+                {/* Status Message */}
+                {status && (
+                  <div
+                    className={`mt-4 text-center ${
+                      status.includes("success")
+                        ? "text-green-400"
+                        : "text-red-400"
+                    }`}
+                  >
+                    <p>{status}</p>
                   </div>
-                </div>
+                )}
               </div>
-            </div>
-
-            {/* Contact Form */}
-            <div className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl shadow-xl">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 gap-6">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Your Name"
-                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                        errors.name ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors`}
-                      value={formData.name}
-                      onChange={(e) =>
-                        setFormData({ ...formData, name: e.target.value })
-                      }
-                    />
-                    {errors.name && (
-                      <p className="text-red-500 text-sm mt-1">{errors.name}</p>
-                    )}
-                  </div>
-
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Your Email"
-                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                        errors.email ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors`}
-                      value={formData.email}
-                      onChange={(e) =>
-                        setFormData({ ...formData, email: e.target.value })
-                      }
-                    />
-                    {errors.email && (
-                      <p className="text-red-500 text-sm mt-1">
-                        {errors.email}
-                      </p>
-                    )}
-                  </div>
-
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Subject"
-                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                        errors.subject ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors`}
-                      value={formData.subject}
-                      onChange={(e) =>
-                        setFormData({ ...formData, subject: e.target.value })
-                      }
-                    />
-                    {errors.subject && (
-                      <p className="text-red-500 text-sm mt-1">
-                        {errors.subject}
-                      </p>
-                    )}
-                  </div>
-
-                  <div>
-                    <textarea
-                      placeholder="Your Message"
-                      rows="4"
-                      className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                        errors.message ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors resize-none`}
-                      value={formData.message}
-                      onChange={(e) =>
-                        setFormData({ ...formData, message: e.target.value })
-                      }
-                    ></textarea>
-                    {errors.message && (
-                      <p className="text-red-500 text-sm mt-1">
-                        {errors.message}
-                      </p>
-                    )}
-                  </div>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:opacity-90 transition-opacity"
-                >
-                  <span>Send Message</span>
-                  <Send className="w-4 h-4" />
-                </button>
-              </form>
-
-              {/* Status Message */}
-              {status && (
-                <div
-                  className={`mt-4 text-center ${
-                    status.includes("success")
-                      ? "text-green-400"
-                      : "text-red-400"
-                  }`}
-                >
-                  <p>{status}</p>
-                </div>
-              )}
             </div>
           </div>
         </div>
