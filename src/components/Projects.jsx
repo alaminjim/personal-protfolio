@@ -102,7 +102,10 @@ const ProjectShowcase = () => {
         "/images/project13/img1 (10).png",
       ],
       sourceCode: "https://github.com/Fahimfylo/mern-ecommerce",
-      liveLink: { url: "https://mern-ecommerce-p250.onrender.com/", text: "Live Link" },
+      liveLink: {
+        url: "https://mern-ecommerce-p250.onrender.com/",
+        text: "Live Link",
+      },
     },
     {
       title: "Shopex",
@@ -308,17 +311,17 @@ const ProjectShowcase = () => {
       title: "Simple Portfolio",
       description:
         "Present your professional journey with this sleek and responsive portfolio, developed using React.js. This portfolio offers a clear and engaging presentation of your skills and expertise, highlighting your projects, testimonials, and contact details for easy communication.",
-      tags: ["React JS", "Tailwind", "Swiper", "Lucide-react"],
+      tags: ["React JS", "Tailwind", "Swiper", "Lucide-react", "lottie-react"],
       featured: true,
       images: [
-        "/images/project7/img1.png",
-        "/images/project7/img2.png",
-        "/images/project7/img3.png",
-        "/images/project7/img4.png",
+        "/public/images/project7/img1.png",
+        "/public/images/project7/img2.png",
+        "/public/images/project7/img3.png",
+        "/public/images/project7/img4.png",
       ],
-      sourceCode: "https://github.com/Fahimfylo/Simple-Portfolio",
+      sourceCode: "https://github.com/alaminjim/simple-info-aboutMe",
       liveLink: {
-        url: "https://silly-tiramisu-d73ecb.netlify.app/",
+        url: "https://simple-protfolio-7c400f.netlify.app/",
         text: "Live Link",
       },
     },
