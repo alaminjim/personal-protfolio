@@ -40,7 +40,7 @@ const ProjectShowcase = () => {
     {
       title: "Solo-Sphere",
       description:
-        "Present your professional journey with this sleek and responsive portfolio, developed using React.js. This portfolio offers a clear and engaging presentation of your skills and expertise, highlighting your projects, testimonials, and contact details for easy communication.",
+        "Solo Sphere is a job-centric platform built to streamline the process of posting and applying for jobs with real-time deadline tracking. Developed using React.js and Firebase, it allows authenticated users to post job opportunities, apply to existing ones, and view recent job activity. Key features include secure login, query-based job filtering, countdown-based deadlines, and a clean, responsive UI. Ideal for both job seekers and recruiters, Solo Sphere ensures an efficient and intuitive experience for managing career opportunities.",
       tags: [
         "React JS",
         "Tailwind",
