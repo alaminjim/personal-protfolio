@@ -32,11 +32,11 @@ const Footer = () => {
             },
             {
               icon: <FaLinkedin />,
-              link: "",
+              link: "https://www.linkedin.com/in/al-amin-islam-668a30377/",
             },
             {
               icon: <FaInstagram />,
-              link: "https://www.instagram.com/md.alamin.jim/",
+              link: "https://www.instagram.com/alamin.islam.dev/",
             },
           ].map((item, index) => (
             <a
