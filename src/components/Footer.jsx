@@ -1,4 +1,10 @@
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaGithub,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -33,6 +39,10 @@ const Footer = () => {
             {
               icon: <FaLinkedin />,
               link: "https://www.linkedin.com/in/al-amin-islam-668a30377/",
+            },
+            {
+              icon: <FaGithub />,
+              link: "https://github.com/alaminjim",
             },
             {
               icon: <FaInstagram />,
