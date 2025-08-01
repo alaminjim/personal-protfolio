@@ -36,7 +36,7 @@ const Footer = () => {
             },
             {
               icon: <FaInstagram />,
-              link: "https://www.instagram.com/alamin.islam.dev/",
+              link: "https://www.instagram.com/alamin_zig/",
             },
           ].map((item, index) => (
             <a
