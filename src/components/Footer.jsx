@@ -63,7 +63,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Al Amin Islam. All rights reserved.
+          © 2024 Al Amin Islam. All rights reserved.
         </p>
       </div>
     </footer>
