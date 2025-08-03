@@ -20,6 +20,146 @@ const ProjectShowcase = () => {
   const projects = [
     // ... (your projects array remains the same) ...
     {
+      title: "Bistro_Boss",
+      description:
+        "Bistro Boss is a full-stack restaurant management web application that offers a dynamic user experience along with powerful admin capabilities. Built with React.js, Tailwind CSS, and DaisyUI, it includes user authentication using Firebase and secure route protection with JWT. Admins can manage users, menus, and orders through a role-based admin dashboard. Customers can browse the menu, add items to their cart, and securely complete orders using the integrated Stripe payment gateway. The backend is developed with Node.js, Express.js, and MongoDB, supporting full CRUD operations and real-time data management for smooth and efficient restaurant operations.",
+      tags: [
+        "React JS",
+        "Tailwind",
+        "Swiper",
+        "React-hot-toast",
+        "React-router",
+        "Express js",
+        "MongoDB",
+        "Dot env",
+        "Stripe",
+        "React-parallax",
+        "JWT",
+        "Rest APIS",
+      ],
+      featured: true,
+      images: [
+        "/public/images/projects-5/img-1.png",
+        "/public/images/project-5/img-2.png",
+        "/public/images/project-5/img-3.png",
+        "/public/images/project-5/img-4.png",
+        "/public/images/project-5/img-5.png",
+        "/public/images/project-5/img-6.png",
+        "/public/images/project-5/img-7.png",
+        "/public/images/project-5/img-8.png",
+        "/public/images/project-5/img-9.png",
+        "/public/images/project-5/img-10.png",
+        "/public/images/project-5/img-11.png",
+      ],
+      sourceCodes: [
+        {
+          type: "Client",
+          url: "https://github.com/alaminjim/Bistro_Boss/tree/main/Bistro-Boss-Client",
+        },
+        {
+          type: "Server",
+          url: "https://github.com/alaminjim/Bistro_Boss/tree/main/Bistro-Boss-Server",
+        },
+      ],
+      liveLink: {
+        url: "https://bistro-boss-restaurent-f843b7.netlify.app",
+        text: "Live Link",
+      },
+    },
+    {
+      title: "GameOn_Gear",
+      description:
+        "GameOnGear is a full-stack sports equipment web application built with React.js and Firebase. It allows users to browse various sports gear and manage equipment data through full CRUD operations. The app uses Firebase Authentication to protect user-specific actions and ensures secure login and registration. Realtime Database is used to store and update data dynamically. It also features protected routes, intuitive navigation, and a responsive UI for seamless experience. Though cart/wishlist is not included, it focuses on managing and exploring products efficiently.",
+      tags: [
+        "React JS",
+        "Tailwind",
+        "React-Swiper",
+        "MongoDB",
+        "Express JS",
+        "FireBase",
+      ],
+      featured: true,
+      images: [
+        "/public/images/project-8/img-1.png",
+        "/public/images/project-8/img-2.png",
+        "/public/images/project-8/img-3.png",
+        "/public/images/project-8/img-4.png",
+        "/public/images/project-8/img-5.png",
+        "/public/images/project-8/img-6.png",
+        "/public/images/project-8/img-7.png",
+      ],
+      sourceCodes: [
+        {
+          type: "Client",
+          url: "https://github.com/alaminjim/GameOn-Gear/tree/main/game-on-gear-client",
+        },
+        {
+          type: "Server",
+          url: "https://github.com/alaminjim/GameOn-Gear/tree/main/game-on-gear-server",
+        },
+      ],
+      liveLink: {
+        url: "https://quiet-belekoy-ad3587.netlify.app",
+        text: "Live Link",
+      },
+    },
+    {
+      title: "Career_Counseling",
+      description:
+        "Career Counseling is a client-side web application built with React.js and Firebase that helps users explore career options based on their interests. It allows users to register, log in, and submit queries related to their career goals. Users can view recommendations, manage their profiles, and track their submitted queries. The application features protected routes, Firebase Authentication, and a responsive design using Tailwind CSS. Ideal for students or freshers seeking guidance through a simple, intuitive interface.",
+      tags: [
+        "React JS",
+        "Tailwind",
+        "Swiper",
+        "FireBase",
+        "DaisyUI",
+        "React-Router",
+      ],
+      featured: true,
+      images: [
+        "/public/images/projects-9/img-1.png",
+        "/public/images/projects-9/img-2.png",
+        "/public/images/projects-9/img-3.png",
+        "/public/images/projects-9/img-4.png",
+        "/public/images/projects-9/img-5.png",
+        "/public/images/projects-9/img-6.png",
+      ],
+      sourceCode: "https://github.com/alaminjim/career-counceling",
+      liveLink: {
+        url: "https://candid-pie-e11d19.netlify.app",
+        text: "Live Link",
+      },
+    },
+    {
+      title: "Dragon_News",
+      description:
+        "Dragon News is a client-side React web application that leverages Firebase Authentication for secure user login, including Google sign-in, and uses Firestore as its backend database to dynamically fetch and display news articles. The app features a responsive and modern UI built with Tailwind CSS and DaisyUI, enabling users to browse news by categories seamlessly. React Router is implemented for smooth client-side navigation between different sections. Additionally, the application supports dual-language content and displays real-time date and time, providing an engaging and user-friendly news reading experience.",
+      tags: [
+        "React JS",
+        "Tailwind",
+        "Swiper",
+        "FireBase",
+        "DaisyUI",
+        "React-Router",
+        "Aside",
+        "React-Marquee",
+      ],
+      featured: true,
+      images: [
+        "/public/images/project-6/img-1.png",
+        "/public/images/project-6/img-2.png",
+        "/public/images/project-6/img-3.png",
+        "/public/images/project-6/img-4.png",
+        "/public/images/project-6/img-5.png",
+      ],
+      sourceCode: "https://github.com/alaminjim/Dragon-News",
+      liveLink: {
+        url: "https://dragon-news-697cfa.netlify.app",
+        text: "Live Link",
+      },
+    },
+
+    {
       title: "Simple Portfolio",
       description:
         "Present your professional journey with this sleek and responsive portfolio, developed using React.js. This portfolio offers a clear and engaging presentation of your skills and expertise, highlighting your projects, testimonials, and contact details for easy communication.",
