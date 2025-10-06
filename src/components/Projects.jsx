@@ -20,6 +20,83 @@ const ProjectShowcase = () => {
   const projects = [
     // ... (your projects array remains the same) ...
     {
+      title: "Imagify",
+      description:
+        "Imagify is an AI-powered web application that allows users to generate images by typing a prompt into an input box and clicking the Generate button. Users have a limited number of credits for image generation, which can be increased by purchasing premium plans via Stripe. The app features secure authentication, a responsive design, and a history of generated images for easy access. Built with React, Tailwind CSS, Node.js, Express, MongoDB, Firebase Authentication, and Stripe, Imagify provides a fast, interactive, and seamless experience for creating AI-generated images.",
+      tags: [
+        "React JS",
+        "Tailwind",
+        "Motion",
+        "React-router",
+        "Express js",
+        "MongoDB",
+        "Mongoose",
+        "Stripe",
+        "Bcrypt",
+        "JWT",
+        "Axios",
+      ],
+      featured: true,
+      images: [
+        "/images/projects-4/img-1.png",
+        "/images/projects-4/img-2.png",
+        "/images/projects-4/img-3.png",
+        "/images/projects-4/img-4.png",
+        "/images/projects-4/img-5.png",
+        "/images/projects-4/img-6.png",
+        "/images/projects-4/img-7.png",
+        "/images/projects-4/img-8.png",
+        "/images/projects-4/img-9.png",
+      ],
+      sourceCodes: [
+        {
+          type: "Source",
+          url: "https://github.com/alaminjim/imagify",
+        },
+      ],
+      liveLink: {
+        url: "https://imagify-ai-generate-3223.netlify.app",
+        text: "Live Link",
+      },
+    },
+    {
+      title: "Foodie_Frenzy",
+      description:
+        "Foodie Frenzy is a modern, interactive web application designed for food enthusiasts to discover, save, and share recipes effortlessly. Users can explore a variety of dishes, bookmark their favorites, and share culinary ideas with the community. The platform features a responsive and user-friendly interface, secure authentication using Firebase, and dynamic content management for a seamless browsing experience. Built with React, Tailwind CSS, Firebases, Foodie Frenzy provides an engaging and intuitive experience for anyone passionate about cooking and food discovery.",
+      tags: [
+        "React JS",
+        "Tailwind",
+        "Swiper",
+        "React-hot-toast",
+        "React-router-Dom",
+        "React-parallax",
+        "React-Helmet",
+        "Framer-Motion",
+        "React-icons",
+      ],
+      featured: true,
+      images: [
+        "/images/projects-1/img-2.png",
+        "/images/projects-1/img-3.png",
+        "/images/projects-1/img-4.png",
+        "/images/projects-1/img-5.png",
+        "/images/projects-1/img-6.png",
+        "/images/projects-1/img-7.png",
+        "/images/projects-1/img-8.png",
+        "/images/projects-1/img-9.png",
+      ],
+      sourceCodes: [
+        {
+          type: "Source",
+          url: "https://github.com/alaminjim/foodie-frenzy",
+        },
+      ],
+      liveLink: {
+        url: "https://foodie-frenzy-121q.netlify.app",
+        text: "Live Link",
+      },
+    },
+    {
       title: "Bistro_Boss",
       description:
         "Bistro Boss is a full-stack restaurant management web application that offers a dynamic user experience along with powerful admin capabilities. Built with React.js, Tailwind CSS, and DaisyUI, it includes user authentication using Firebase and secure route protection with JWT. Admins can manage users, menus, and orders through a role-based admin dashboard. Customers can browse the menu, add items to their cart, and securely complete orders using the integrated Stripe payment gateway. The backend is developed with Node.js, Express.js, and MongoDB, supporting full CRUD operations and real-time data management for smooth and efficient restaurant operations.",
@@ -174,45 +251,6 @@ const ProjectShowcase = () => {
       sourceCode: "https://github.com/alaminjim/simple-info-aboutMe",
       liveLink: {
         url: "https://simple-protfolio-7c400f.netlify.app/",
-        text: "Live Link",
-      },
-    },
-    {
-      title: "Solo-Sphere",
-      description:
-        "Solo Sphere is a job-centric platform built to streamline the process of posting and applying for jobs with real-time deadline tracking. Developed using React.js and Firebase, it allows authenticated users to post job opportunities, apply to existing ones, and view recent job activity. Key features include secure login, query-based job filtering, countdown-based deadlines, and a clean, responsive UI. Ideal for both job seekers and recruiters, Solo Sphere ensures an efficient and intuitive experience for managing career opportunities.",
-      tags: [
-        "React JS",
-        "Tailwind",
-        "Swiper",
-        "React-hot-toast",
-        "React-router",
-        "Express js",
-        "Node js",
-        "MongoDB",
-        "Dot env",
-      ],
-      featured: true,
-      images: [
-        "/images/project-10/img-1.png",
-        "/images/project-10/img-2.png",
-        "/images/project-10/img-3.png",
-        "/images/project-10/img-4.png",
-        "/images/project-10/img-5.png",
-        "/images/project-10/img-6.png",
-      ],
-      sourceCodes: [
-        {
-          type: "Client",
-          url: "https://github.com/alaminjim/solo-sphere/tree/main/client",
-        },
-        {
-          type: "Server",
-          url: "https://github.com/alaminjim/solo-sphere/tree/main/server",
-        },
-      ],
-      liveLink: {
-        url: "https://solo-sphere-434b4c.netlify.app/",
         text: "Live Link",
       },
     },
